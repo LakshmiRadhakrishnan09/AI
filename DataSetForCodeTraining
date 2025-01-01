@@ -1,0 +1,35 @@
+BigCode Project : Project to create code for different programming language. An open scientific collaboration working on the responsible development of Large Language Models for Code (Code LLMs). 
+
+The Stack : Datset with code from different programming languages
+https://huggingface.co/datasets/bigcode/the-stack
+The Stack contains over 6TB of permissively-licensed source code files covering 358 programming languages. 
+The dataset was created as part of the BigCode Project, an open scientific collaboration working on the responsible development of Large Language Models for Code (Code LLMs). 
+The dataset contains 358 programming languages. The full list can be found here. HCL language is included
+
+The Stack V2
+https://huggingface.co/datasets/bigcode/the-stack-v2
+The Stack v2 contains over 3B files in 600+ programming and markup languages. The dataset was created as part of the BigCode Project, an open scientific collaboration working on the responsible development of Large Language Models for Code (Code LLMs). The dataset contains 658 languages. The full list can be found in the language stats table.
+
+StarCodeBase : Model trained with a subset of languages
+https://huggingface.co/bigcode/starcoderbase
+bigcode/starcoderbase  — 
+The StarCoderBase models are 15.5B parameter models trained on 80+ programming languages from The Stack (v1.2), with opt-out requests excluded. 
+The model has been trained on source code from 80+ programming languages. The model was trained on GitHub code.
+??Which are the 80+ programming languages? Is HCL included?
+
+StarCodeBase V2
+https://github.com/bigcode-project/starcoder2
+StarCoder2 is a family of code generation models (3B, 7B, and 15B), trained on 600+ programming languages from The Stack v2 
+
+BigCode(StarCoder Data) : Dataset similar to Stack
+https://github.com/bigcode-project/bigcode-dataset/tree/main
+This repository gathers all the code used to build the BigCode datasets such as The Stack as well as the preprocessing necessary used for model training.
+https://github.com/bigcode-project/bigcode-dataset/blob/main/language_selection/the-stack-11-language-selection.ipynb
+https://gist.github.com/ppisarczyk/43962d06686722d26d176fad46879d41 HCL is included.
+
+DeepDeek-Coder : A model similar to StarCode and Llama
+https://github.com/deepseek-ai/DeepSeek-Coder
+Collect code data from GitHub and apply the same filtering rules as StarCoder Data to filter data.
+
+https://github.com/deepseek-ai/DeepSeek-Coder — Contribute
+https://github.com/apache/solr — Contribute
