@@ -1,0 +1,28 @@
+Exctracting features of a text/word. Features that represent a word. Represent it as a vector.
+Person, Location, Has Eyes... [0, 1, .9, 0]
+Convert word into vector of words
+
+For ML models to work, text need to be converted into numbers.
+One way is to assign each word to a number.
+
+Example
+
+Disney is great   -> 1 , 2, 3
+Disney is awesome -> 1, 2, 4 
+
+Even though 'great' and 'awesome' has similar meaning, they have different numbers associated. If a model understand how to use 'great' cannot understand how to use 'awesome'. 
+It would be great to give same numebr to both 'great' and 'awesome'.
+
+Same word can be used in different context or made plural. So it would be good to associate same word with different numbers to indicate different context.
+My cell phone is broke, great!
+
+There are various approaches of converting text to vector: To create Vectors:
+One hot encoding
+Count based representation - Bag of words, N-gram approach, TF-IDF
+Embeddings : represent word in a dense vector in such a way that similar words are close to each other in the embedding space. Similar words have similar embeddings. They will be dense around 300.
+
+
+Word Embeddings Eg: word2vec, Glove, FastText ( use Continous Bag of words and Skip grams). Transformer based ( BERT, GPT)
+
+SpaCy includes pre-trained word embeddings like GloVe or FastText for representing words as dense vectors.
+
