@@ -1,3 +1,7 @@
+Property Price Prediction, Identify dogs and Cat.
+Features of a text. How do you come up with features of text?
+Dhoni, Cummins , Australia ( IS a person, Has Eyes, Is a Location, Has Government). This forms a feature vector.
+
 Exctracting features of a text/word. Features that represent a word. Represent it as a vector.
 Person, Location, Has Eyes... [0, 1, .9, 0]
 Convert word into vector of words
