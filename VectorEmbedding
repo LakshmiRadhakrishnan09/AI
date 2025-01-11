@@ -19,10 +19,23 @@ My cell phone is broke, great!
 There are various approaches of converting text to vector: To create Vectors:
 One hot encoding
 Count based representation - Bag of words, N-gram approach, TF-IDF
-Embeddings : represent word in a dense vector in such a way that similar words are close to each other in the embedding space. Similar words have similar embeddings. They will be dense around 300.
+Embeddings : represent word in a dense vector in such a way that similar words are close to each other in the embedding space. 
+Similar words have similar embeddings. They will be dense around 300.
 
+Word Embeddings represent a word as numbers(as numeric vectors) that captures sematic relationship and contextual information. 
+Similar meanings are positional together.
+Words with similar words are closer in vector representation.
+Actual word emneddings have 100s of embeddings
 
-Word Embeddings Eg: word2vec, Glove, FastText ( use Continous Bag of words and Skip grams). Transformer based ( BERT, GPT)
+Frequency based embeddings : Based on frequency of words. Frequency of words can detect the importance of word in text.
+TF-IDF : emphazize words of higher freqency.
+Prediction Based : Associate a dog with bark and tail
+
+Word Embeddings Eg: word2vec, Glove, FastText ( use Continous Bag of words(CBOW) and Skip grams). Transformer based ( BERT, GPT)
+Traditional word embeddings assign a fixed vector to each word. Transformers assign contextual based embeddings.
+Representation of word change based on surroinding context ( eg: I am going to bank. I am sitting on bank of river).
+
+Word embeddings revolutionized how machines understand and process human language.
 
 SpaCy includes pre-trained word embeddings like GloVe or FastText for representing words as dense vectors.
 
