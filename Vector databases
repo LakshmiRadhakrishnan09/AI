@@ -1,0 +1,10 @@
+Using LLM API - May not be relevant
+Store the file(related files) at OpenAPI. Use that to give a good response.
+How to identify related files?
+  use Vector Databases
+    - Given an object , find all similar objects
+    - If u send a file, process the file, represent that as a point(in n dimension space)
+    - Eg: Neon(Postgres with wrapper), PG vector(host in EC2)
+
+When a user ask a query -> send it to vector database -> returns all similar files -> Get the file name -> send this to Model
+
