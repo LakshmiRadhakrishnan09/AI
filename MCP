@@ -6,7 +6,7 @@ Instaed of writing custom code to connect to every other applications(Google dri
 write once. Can be used everywhere.
 MCP Server can be shared.
 
-![MCP](./MCP.png)
+[MCP!](MCP.png)
 
 
 MCP Server can run on same host or on remote host . It exposes specific capabilities using a standaridized interface.
@@ -31,4 +31,36 @@ Deploying a local MCP Server
 
 Create mcp.json file in .vscode directory.
 Use docker container to run Terraform MCP Server.
+
+MCP Architecture
+
+1. Run MCP Server locally. Start the server locally. Add tools to call APIS.
+server.tool(
+  "list_students",
+  {
+    description: "Get list of students",
+    inputSchema: {}
+  },
+  async () => {
+
+    const response = await axios.get(
+      "https://app1.api/students"
+    );
+
+    return {
+      content: [
+        {
+          type: "text",
+          text: JSON.stringify(response.data)
+        }
+      ]
+    };
+  }
+);
+
+2. Host MCP Server Centrally. Advantage: Everyone can reuse.
+
+3. Run MCP Server as docker( For CLI tools that need access to local file system. Eg: Terraform MCP Server.). Image is pulled from docker registry. 
+
+
 
