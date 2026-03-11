@@ -1,0 +1,34 @@
+MCPs : Provides context to LLM ( Model Context protocol).
+From Anthropic.
+Standard Protocol on how applications provide context to LLMs.
+
+Instaed of writing custom code to connect to every other applications(Google drive, slack). 
+write once. Can be used everywhere.
+MCP Server can be shared.
+
+![MCP](./MCP.png)
+
+
+MCP Server can run on same host or on remote host . It exposes specific capabilities using a standaridized interface.
+Local services(local files) or Remove services.
+
+MCP Server provides - Resources and Tools.
+Resources : provide context
+Tools: Executable API functions. To perform actions.
+
+Terraform MCP Server
+---------------------
+Access to terraform documentation, Registry APIs and workspaces.
+
+Only LLMs : Deprecated arguments. MCP : on live data.
+
+Tools: Providers, Modules, Policies.
+Resource: Style Guides.
+
+
+Deploying a local MCP Server
+------------------------------
+
+Create mcp.json file in .vscode directory.
+Use docker container to run Terraform MCP Server.
+
